@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,9 @@
   
 </head>
 <body>
-  <div class="rating-container">
+  <section class="rating-container">
     <div class="star-container">
-      <img src="./src/images/icon-star.svg" alt="">
+      <img src="./src/images/icon-star.svg" alt="Star Icon">
     </div>
     <div class="content-container">
       <h3 class="title">How did we do?</h3>
@@ -23,20 +23,21 @@
         to help us improve our offering!</p>
     </div>
     <div class="rating">
-      <input name="rating" type="radio" id="One-star">
-      <input name="rating" type="radio" id="two-star">
-      <input name="rating" type="radio" id="three-star" >
-      <input name="rating" type="radio" id="four-star">
-      <input name="rating" type="radio" id="five-star">
+      <button class="rating-button one-star">1</button>
+      <button class="rating-button two-star">2</button>
+      <button class="rating-button three-star">3</button>
+      <button class="rating-button four-star">4</button>
+      <button class="rating-button  five-star">5</button>
+
     </div>
     <div class="submit">
-      <button>Submit</button>
+      <button id="submit">Submit</button>
     </div>
-  </div>
+  </section>
 
-  <div class="thanking-container">
+  <section class="thanking-container">
     <div class="illustration">
-      <img src="./src/images/illustration-thank-you.svg" alt="">
+      <img src="./src/images/illustration-thank-you.svg" alt="Thank you illustration">
     </div>
     <div class="rating-info">
       <p>You selected</p><p id="rating"> </p> <p> out of 5</p>
@@ -46,12 +47,9 @@
       <p>We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!</p>
     </div>
-  </div>
+  </section>
  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  
   <script src="./src/JS/index.js"></script>
 </body>
 </html>
